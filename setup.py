@@ -4,7 +4,6 @@ version = '1.0a1'
 
 requires = [
     'setuptools',
-    'lxml',
     'suds',
     'corejet.core',
 ]
