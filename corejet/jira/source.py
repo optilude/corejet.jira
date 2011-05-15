@@ -12,7 +12,7 @@ def jiraSource(details):
     username=<username> - username to use to connect
     password=<password> - password to use to connect
     url=<url> - url of JIRA instance
-    project=<name> - project nam
+    project=<name> - project name
     filter=<id> - id of filter that returns stories
     pointsField=<id> - id of field containing story points
     epicField=<id> - id of field indicating epic for a story
