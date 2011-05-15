@@ -4,6 +4,16 @@ CoreJet test runner JIRA integration
 This package provides a requirements catalogue source for
 `corejet.testrunner`_ that can fetch requirements from JIRA.
 
+To use it, make sure it is installed in the working set of the testrunner.
+If using Buildout, you can do this with::
+
+    [test]
+    recipe = corejet.testrunner
+    eggs = 
+        corejet.jira
+        <other packages>
+    defaults = ['--auto-color', '--auto-progress']
+
 Here is an example command line invocation::
 
   ./bin/test -s corejet.core --corejet="jira,url=https://acme.jira.com,username=corejet,password=secret,project=Acme Corp,filter=10151,pointsField=10060,epicField=10061,acceptanceCriteriaField=10088"
